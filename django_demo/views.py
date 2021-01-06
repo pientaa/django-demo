@@ -26,3 +26,7 @@ def results(request, question_id):
 
 def vote(request, question_id):
     return HttpResponse("You're voting on question: %s." % question_id)
+
+
+def googleMap(request):
+    return render(request, 'django_demo/map.html')
