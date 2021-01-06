@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  django-demo-db:
+    container_name: django-demo-db
+    image: postgres:12
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: django-demo-db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    network_mode: bridge
