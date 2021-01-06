@@ -1,4 +1,4 @@
-# djangoDemo
+# Django Demo
 
 ## Run database
 ```bash
