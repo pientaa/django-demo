@@ -29,4 +29,8 @@ def vote(request, question_id):
 
 
 def googleMap(request):
-    return render(request, 'django_demo/map.html')
+    if request.user.is_authenticated:
+        return render(request, 'django_demo/map.html')
+    else:
+        return render(request, 'registration/logged_out.html')
+
